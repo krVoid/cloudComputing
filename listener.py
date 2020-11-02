@@ -2,10 +2,10 @@ import paho.mqtt.client as mqtt
 from sensor_Data import sensor_Data_Handler
 
 # MQTT Settings 
-MQTT_Broker = "iot.eclipse.org"
+MQTT_Broker = "test.mosquitto.org"
 MQTT_Port = 1883
 Keep_Alive_Interval = 45
-MQTT_Topic = "Home/BedRoom/#"
+MQTT_Topic = "cloud2020/gr04-3/#"
 
 
 # Subscribe to all Sensors at Base Topic
