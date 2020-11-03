@@ -21,7 +21,7 @@ def on_message(mosq, obj, msg):
     print("MQTT Topic: " + msg.topic)
     print("Data: " + str(msg.payload))
     #FIXME later
-    #sensor_Data_Handler(msg.topic, str(msg.payload))
+    sensor_Data_Handler(msg.topic, msg.payload)
 
 
 def on_subscribe(mosq, obj, mid, granted_qos):
